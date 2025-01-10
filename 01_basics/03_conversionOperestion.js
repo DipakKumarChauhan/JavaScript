@@ -79,7 +79,10 @@
 
 // 2**3 is 2^3
 
-console.log("1" + 2);
-console.log(1 + "2");
-console.log("1" + 2 + 2);
-console.log(1 + 2 + "2");
+//  
+// Jo conversion pehele likjo vo ho jata ha
+
+// console.log(+true) // give 1
+// console.log(+"") // gives zero 
+
+// + does conversion

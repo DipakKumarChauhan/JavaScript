@@ -10,3 +10,6 @@ let age = 22;
 console.log(typeof(age))
 console.log(typeof(null)) // it will give object 
 console.log(typeof undefined)
+
+//////////////////  Memory- Stack and Heap ////////////////////
+// Stack(used in primitive data types) , Heap (Non-primitive)

@@ -38,13 +38,16 @@ function loginUserMessage(username = "sam"){
 // console.log(loginUserMessage("hitesh"))
 // console.log(loginUserMessage("hitesh"))
 
+// rest operator is used agar pata na ho ki kitne parameters ayenge rest operator unko ek array me add kar dega
 
-function calculateCartPrice(val1, val2, ...num1){
+function calculateCartPrice(val1, val2, ...num1) // yahan val1 me 200 jayega, val2 me 400 aur baki sab num1 me
+{
     return num1
 }
 
 // console.log(calculateCartPrice(200, 400, 500, 2000))
 
+// How to pass object in a function
 const user = {
     username: "hitesh",
     prices: 199
@@ -54,7 +57,7 @@ function handleObject(anyobject){
     console.log(`Username is ${anyobject.username} and price is ${anyobject.price}`);
 }
 
-// handleObject(user)
+// handleObject(user) we ca pass object directly
 handleObject({
     username: "sam",
     price: 399

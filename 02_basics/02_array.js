@@ -35,11 +35,13 @@ const anotherArray = [1,2,3,[4,5,6],7,[6,7,[4,5]]]
 
 const realArray = anotherArray.flat(Infinity) // here inifinity is the depth till which we want it to flatten
 
-console.log(realArray)
+// console.log(realArray)
 
 
 // to check and convert an array
 console.log(Array.isArray("Dipak")) // checks if its an array
 console.log(Array.from("Dipak")) // converts into an array
+
+console.log(Array.from({name : "Dipak"})) // this will give empty array coz "from" operator won't be able to identify ki kisko array banana hai
 
 

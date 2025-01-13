@@ -1,3 +1,5 @@
+// // To run the code we need to comment the below code which setuos the enviorn
+
 // Importing the JSDOM class from jsdom
 // const { JSDOM } = require("jsdom");
 // const fs = require("fs");

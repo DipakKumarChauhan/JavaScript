@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8"> <!--  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai Ar Code</title>
+</head>
+<body style = "background-color: #212121; color:aliceblue">
+    <ul class = "Language">
+        <li>Javasript</li>
+    </ul>
+    
+</body>
+
+<script>
+// adding or creating a new element using a function
+
+function addLanguage(LangName)
+{
+    const li  = document.createElement('li');
+    li.innerHTML = `${LangName}`  
+    document.querySelector('.Language').appendChild(li)
+
+}
+addLanguage("python")
+addLanguage('typescript')
+
+// Optimised approach
+
+function addOptiLanguage(LangName)
+{
+    const li = documnet.createElement('li')
+    li.appendChild(document.createTextNode(langname))
+    document.querySelector('.Language').appendChild(li)
+    
+}
+addOptiLanguage('golang')
+
+
+// Editing 
+
+const secondLang = document.querySelector("li:nth-child(2)")
+//secondLang.innerHTML = "Mojo"
+
+// above one works too
+// optimised approach
+const newli = document.createElement('li')
+newli.textContent = "Mojo"
+secondLang.replacewith(newli);
+
+
+
+</script>
+
+</html>

@@ -61,8 +61,10 @@
    
     
     document.querySelector('#images').addEventListener('click', function(e){
-        console.log(e.target.tagName);
-        if (e.target.tagName === 'IMG') {
+        console.log(e.target.tagName);// tagName give name of the tag we are clicking on e.eg for owl tagName ig Images while for google link its li // we can do e.target.parentNode
+        // We use this if coz without it if we click on google.com we will remove everyting
+        if (e.target.tagName === 'IMG') // here condition is if tagName of event is IMG then only execute
+         {
             console.log(e.target.id);
             let removeIt = e.target.parentNode
             removeIt.remove()

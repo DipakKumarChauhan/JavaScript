@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Dipak</h1>
+    <button id ="stop"> Stop</button>
+
+</body>
+<script>
+   // Set Timeout Tut
+   setTimeout(function() {
+        console.log("Dipak");
+    }, 2000 // in ms 
+    )
+
+    // const sayDipak  =  function() {
+    //     console.log("Dipak p2");
+    // }
+    // setTimeout(sayDipak , 2000) // we gave the refenrence of sayDipak function
+
+
+    const changeText  =  function() {
+           document.querySelector('h1').innerHTML = "best Js Series"
+    }
+    const textChanger = setTimeout(changeText , 2000)
+document.querySelector('#stop'). addEventListener('click' ,  function(){
+    clearTimeout(textChanger)
+    console.log('STOPPED')
+})
+
+
+
+</script>
+</html>

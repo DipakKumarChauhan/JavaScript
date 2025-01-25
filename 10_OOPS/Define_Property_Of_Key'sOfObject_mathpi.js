@@ -1,4 +1,5 @@
 // Advance Topic
+// Here we Learn How to define Properties of Key's of an Object
 
 const descripter = Object.getOwnPropertyDescriptor(Math, "PI") // this line gets us all the properties of Object's key value PI
 
